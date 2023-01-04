@@ -1,0 +1,48 @@
+@import '../utilities/media-query';
+
+.name-first {
+    grid-area: first;
+}
+
+.name-last {
+    grid-area: last;
+}
+
+.email {
+    grid-area: email;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+}
+
+.form {
+    display: grid;
+    grid-template-areas: 
+    "first"
+    "last"
+    "email"
+    "subject"
+    "message";
+
+    &-control{
+        background-color: $blue-light;
+        padding:5px;
+        margin:5px 5px 5px 5px;
+    }
+}
+
+@include media-query(medium){
+    .form{
+    grid-template-areas: 
+    "first last"
+    "email email"
+    "subject subject"
+    "message message";
+    grid-column-gap: 2rem;
+    }
+}

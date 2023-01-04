@@ -1,0 +1,30 @@
+@import 'variables';
+@mixin media-query($break) {
+    @if $break =="small" {
+        @media (min-width: $break-xs) {
+            @content;
+        }
+    }
+
+    @else if $break =="medium" {
+        @media (min-width: $break-s) {
+            @content;
+        }
+    }
+
+    @else if $break =="large" {
+        @media (min-width: $break-m) {
+            @content;
+        }
+    }
+
+    @else if $break =="x-large" {
+        @media (min-width: $break-l) {
+            @content;
+        }
+    }
+
+    @else {
+        @error "Error: No value could be retrieved from argument $break: '#{$break}'";
+    }
+}

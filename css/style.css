@@ -1,3 +1,40 @@
+.body {
+  background-color: #9BCCFD; }
 
+* {
+  box-sizing: border-box; }
+
+.name-first {
+  grid-area: first; }
+
+.name-last {
+  grid-area: last; }
+
+.email {
+  grid-area: email; }
+
+.subject {
+  grid-area: subject; }
+
+.message {
+  grid-area: message; }
+
+.form {
+  display: grid;
+  grid-template-areas: "first" "last" "email" "subject" "message"; }
+  .form-control {
+    background-color: #9BCCFD;
+    padding: 5px;
+    margin: 5px 5px 5px 5px; }
+
+@media (min-width: 767px) {
+  .form {
+    grid-template-areas: "first last" "email email" "subject subject" "message message";
+    grid-column-gap: 2rem; } }
+.body {
+  background-color: #9BCCFD; }
+
+* {
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */
