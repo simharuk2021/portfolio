@@ -52,12 +52,37 @@ body {
   .form {
     grid-template-areas: "first last" "email email" "subject subject" "message message";
     grid-column-gap: 2rem; } }
-.headline {
+.headline, .phone, .headline-bottom-text {
   display: flex;
   justify-content: center; }
-  .headline-p {
+  .headline-p, .phone-p, .headline-bottom-text-p {
     display: flex;
     justify-content: center; }
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.project-headline {
+  align-items: center; }
+
+.project-image {
+  max-width: 100%; }
+
+.projects-wrapper {
+  padding: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 767px) {
+    .projects-wrapper {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .projects-wrapper .project {
+        flex: 1 1 222px;
+        margin: 2rem; } }
 
 body {
   background-color: #e6f2ff;
