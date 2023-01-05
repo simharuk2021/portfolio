@@ -1,4 +1,4 @@
-@import'utilities/variables';
+@import'../utilities/variables';
 
 body {
     background-color: $v-light-blue;
@@ -6,6 +6,11 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
+// * {
+//     box-sizing: border-box;
+// }
+
+// .column-wrapper{
+//     display: flex;
+//     flex-direction:row;
+// }
