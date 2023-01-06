@@ -106,7 +106,11 @@ body {
 /* line 23, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .form {
   display: grid;
-  grid-template-areas: "first" "last" "email" "subject" "message";
+  grid-template-areas: "first"
+ "last"
+ "email"
+ "subject"
+ "message";
 }
 
 /* line 33, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
@@ -133,7 +137,10 @@ body {
 @media (min-width: 767px) {
   /* line 54, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .form {
-    grid-template-areas: "first last" "email email" "subject subject" "message message";
+    grid-template-areas: "first last"
+ "email email"
+ "subject subject"
+ "message message";
     grid-column-gap: 2rem;
   }
 }
@@ -260,7 +267,7 @@ body {
 
 /* line 18, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-submit:hover {
-  background-color: #d2bae3;
+  background-color: #a9a9a9;
 }
 
 /* line 2, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */

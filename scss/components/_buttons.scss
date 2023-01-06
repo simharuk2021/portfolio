@@ -6,20 +6,20 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
 
-}
+    &-project {
+        background-color: $orchid-light;
 
-.button-project {
-    background-color: $orchid-light;
+        &:hover {
+            background-color: lighten($orchid-light, 10%);
+        }
+    }
 
-    &:hover {
-        background-color: lighten($orchid-light, 10);
+    &-submit {
+        background-color: $grey;
+    
+        &:hover {
+            background-color: lighten($grey, 5%);
+        }
     }
 }
 
-.button-submit {
-    background-color: $green;
-
-    &:hover {
-        background-color: lighten($green, 10);
-    }
-}
