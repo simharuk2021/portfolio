@@ -1,15 +1,18 @@
-// .sidebar-wrapper{
-//     display: flex;
-//     justify-content: center;
-// }
+@import'../utilities/media-query';
 
-// .link-wrapper, .link, .button-container{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-// }
+.sidebar-wrapper{
+    display: flex;
+    justify-content: center;
+}
 
-// .hea, .phone, .headline-bottom-text, .home {
-//     display: flex;
-//     justify-content: center;
-// }
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+@include media-query(medium){
+    .column-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+}
