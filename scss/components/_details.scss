@@ -7,3 +7,21 @@
         justify-content: center;
     }
 }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+@include media-query(large){
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+}
+
+.button-submit{
+    width:100px;
+}

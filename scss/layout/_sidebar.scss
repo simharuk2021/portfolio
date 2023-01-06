@@ -1,8 +1,13 @@
 @import'../utilities/media-query';
 
-.sidebar-wrapper{
+.sidebar-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    // position: sticky;
+    // top:0;
+    // overflow-y: visible;
+    // margin-bottom: 100px;
 }
 
 .link {
@@ -10,9 +15,31 @@
     justify-content: center;
 }
 
-@include media-query(medium){
-    .column-wrapper{
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: px solid $orchid;
+}
+@include media-query(medium) {
+    .column-wrapper {
         display: flex;
         flex-direction: row;
+    }
+
+    .sidebar {
+        width: 160px;
+        border: 3px solid $orchid;
+        &-wrapper {
+            width: 160px;
+            position: sticky;
+            top:0;
+            overflow-x: visible;
+            height:100%;
+            
+            
+            // position: relative !important;
+        }
     }
 }
