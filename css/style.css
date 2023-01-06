@@ -180,21 +180,27 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   background-color: white;
+  margin: 2rem;
 }
 
 /* line 13, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+.project:hover {
+  cursor: pointer;
+}
+
+/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project-headline {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 25, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project-image {
   max-width: 100%;
 }
 
-/* line 23, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .projects-wrapper {
   padding: 50px;
   align-items: center;
@@ -203,13 +209,13 @@ body {
 }
 
 @media (min-width: 767px) {
-  /* line 23, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+  /* line 29, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
   .projects-wrapper {
     flex-direction: row !important;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  /* line 35, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+  /* line 41, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
   .projects-wrapper .project {
     flex: 1 1 222px;
     margin: 2rem;
@@ -222,16 +228,30 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 3, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+/* line 2, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
 body {
-  background-color: #e6f2ff;
-  letter-spacing: .4px;
-  font-family: Poppins, sans-serif;
+  height: auto;
+  /* background: 
+    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
+    linear-gradient(to right, #134a8e, #00b6f1 50%),
+    #fff; */
+  background: radial-gradient(circle at bottom, white, transparent 80%), linear-gradient(to top, dodgerblue 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #0074DD;
+  animation: bg 20s infinite;
 }
 
-/* line 9, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
-.main-content {
-  z-index: 2;
+@keyframes bg {
+  0%, 100% {
+    background-color: #9BCCFD;
+  }
+  25% {
+    background-color: #36D6E7;
+  }
+  50% {
+    background-color: #81599F;
+  }
+  75% {
+    background-color: #B5E287;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

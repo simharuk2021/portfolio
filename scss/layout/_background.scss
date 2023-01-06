@@ -1,0 +1,27 @@
+
+body {
+  height: auto;
+  
+  
+//   overflow: hidden;
+  
+  // I do like these colours
+  /* background: 
+    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
+    linear-gradient(to right, #134a8e, #00b6f1 50%),
+    #fff; */
+  
+  background: 
+    radial-gradient(circle at bottom, white, transparent 80%),    
+    linear-gradient(to top, dodgerblue 0%, transparent 70%),    
+    linear-gradient(to bottom, transparent, rgba(white, 0.4) 70%),
+    $blue;  
+  animation: bg 20s infinite;
+}
+
+@keyframes bg {
+  0%, 100% { background-color: $blue-light; }
+  25% { background-color: $aqua; }
+  50% { background-color: $orchid; }
+  75% { background-color: $green; }
+}
