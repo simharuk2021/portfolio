@@ -38,7 +38,7 @@
     
         &:hover, :focus{
             box-shadow: 0 0 3px 3px lighten($blue-light, 10%);
-            background-color: $blue-light;
+            // background-color: $blue-light;
             cursor: pointer;
         }
     }
@@ -46,10 +46,13 @@
 
 ::placeholder{
     font-style: italic;
-    color: $bk-grey;
+    color: $grey;
     padding:1rem;
 }
 
+#message{
+    height: 200px;
+}
 
 @include media-query(medium){
     .form{
