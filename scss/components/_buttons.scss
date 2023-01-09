@@ -3,14 +3,15 @@
     height: 50px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     color: white;
+    text-transform: uppercase;
 
     &-project {
         background-color: $orchid-light;
 
         &:hover {
-            background-color: lighten($orchid-light, 10%);
+            background-color: lighten($orchid-light, 5%);
         }
     }
 
@@ -19,6 +20,15 @@
     
         &:hover {
             background-color: lighten($grey, 5%);
+        }
+    }
+    &-nav {
+        margin:1rem;
+        background-color: $blue;
+    
+        &:hover {
+            background-color: lighten($blue, 5%);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     }
 }

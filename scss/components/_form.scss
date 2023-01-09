@@ -31,7 +31,7 @@
     "message";
 
     &-control{
-        background-color: $blue-light;
+        background-color: $orchid-light;
         padding:0 ;
         margin-bottom: 1rem;
         height: 3rem;
@@ -46,6 +46,7 @@
 
 ::placeholder{
     font-style: italic;
+    font-weight: 400;
     color: $grey;
     padding:1rem;
 }
