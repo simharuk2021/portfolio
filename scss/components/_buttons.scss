@@ -9,8 +9,8 @@
     letter-spacing: .4px;
 
     &-project {
-        background-color: $green-light;
-        color:black;
+        background-color: $orchid;
+        color:white;
         font-weight: 600;
 
         &:hover {
@@ -19,10 +19,11 @@
     }
 
     &-submit {
-        background-color: $grey;
+        background-color: $blue;
     
         &:hover {
-            background-color: lighten($grey, 5%);
+            background-color: lighten($blue, 5%);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     }
     &-nav {
@@ -34,5 +35,16 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
     }
+    
+        &-selected{
+            margin:1rem;
+            background-color: $orchid;
+        
+            &:hover {
+                background-color: lighten($orchid, 5%);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+    
 }
 

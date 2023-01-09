@@ -1,27 +1,30 @@
-
 .body-style {
   height: auto;
-  
-  
-//   overflow: hidden;
-  
-  // I do like these colours
-  /* background: 
-    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
-    linear-gradient(to right, #134a8e, #00b6f1 50%),
-    #fff; */
-  
-  background: 
-    radial-gradient(circle at bottom, white, transparent 80%),    
-    linear-gradient(to top, black 0%, transparent 70%),    
+
+  background:
+    radial-gradient(circle at bottom, white, transparent 80%),
+    linear-gradient(to top, black 0%, transparent 70%),
     linear-gradient(to bottom, transparent, rgba(white, 0.4) 70%),
-    $green-light;  
+    $green-light;
   animation: bg 20s infinite;
 }
 
 @keyframes bg {
-  0%, 100% { background-color: black; }
-  25% { background-color: black; }
-  50% { background-color: $green-light; }
-  75% { background-color: black; }
+
+  0%,
+  100% {
+    background-color: black;
+  }
+
+  25% {
+    background-color: black;
+  }
+
+  50% {
+    background-color: $blue;
+  }
+
+  75% {
+    background-color: black;
+  }
 }

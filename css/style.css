@@ -113,7 +113,7 @@ body {
 
 /* line 33, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .form-control {
-  background-color: #cde4b6;
+  background-color: #9BCCFD;
   padding: 0;
   margin-bottom: 1rem;
   height: 3rem;
@@ -306,8 +306,8 @@ body {
 
 /* line 11, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-project {
-  background-color: #cde4b6;
-  color: black;
+  background-color: #81599F;
+  color: white;
   font-weight: 600;
 }
 
@@ -318,46 +318,56 @@ body {
 
 /* line 21, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-submit {
-  background-color: #838383;
+  background-color: #0074DD;
 }
 
 /* line 24, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-submit:hover {
-  background-color: #909090;
+  background-color: #0081f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 28, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-nav {
   margin: 1rem;
   background-color: #0074DD;
 }
 
-/* line 32, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 33, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-nav:hover {
   background-color: #0081f7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 2, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
+/* line 39, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+.button-selected {
+  margin: 1rem;
+  background-color: #81599F;
+}
+
+/* line 43, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+.button-selected:hover {
+  background-color: #8e67aa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
 .body-style {
   height: auto;
-  /* background: 
-    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
-    linear-gradient(to right, #134a8e, #00b6f1 50%),
-    #fff; */
   background: radial-gradient(circle at bottom, white, transparent 80%), linear-gradient(to top, black 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #cde4b6;
   animation: bg 20s infinite;
 }
 
 @keyframes bg {
-  0%, 100% {
+  0%,
+  100% {
     background-color: black;
   }
   25% {
     background-color: black;
   }
   50% {
-    background-color: #cde4b6;
+    background-color: #0074DD;
   }
   75% {
     background-color: black;
