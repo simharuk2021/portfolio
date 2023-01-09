@@ -6,12 +6,15 @@
     box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     color: white;
     text-transform: uppercase;
+    letter-spacing: .4px;
 
     &-project {
-        background-color: $orchid-light;
+        background-color: $green-light;
+        color:black;
+        font-weight: 600;
 
         &:hover {
-            background-color: lighten($orchid-light, 5%);
+            background-color: lighten($green-light, 5%);
         }
     }
 

@@ -9,8 +9,8 @@
 
 /* line 9, ../PROJECTS/SCION/portfolio/scss/layout/_container.scss */
 .contact {
-  background: #ba95d5;
-  background: linear-gradient(0deg, #ba95d5 0%, #838383 20%, #e6f2ff 100%);
+  background: #cde4b6;
+  background: linear-gradient(0deg, #cde4b6 0%, #838383 30%, #e6f2ff 100%);
   padding: 50px;
 }
 
@@ -113,7 +113,7 @@ body {
 
 /* line 33, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .form-control {
-  background-color: #BA95D5;
+  background-color: #cde4b6;
   padding: 0;
   margin-bottom: 1rem;
   height: 3rem;
@@ -188,7 +188,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   background: #ba95d5;
-  background: linear-gradient(180deg, #ba95d5 0%, #838383 20%, #e6f2ff 100%);
+  background: linear-gradient(180deg, #cde4b6 0%, #838383 50%, #e6f2ff 100%);
   margin: 1rem 0px;
   top: 0px;
 }
@@ -252,6 +252,26 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* line 6, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+.social-wrapper {
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 14, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+.icon-social {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button {
   width: 100px;
@@ -261,35 +281,38 @@ body {
   box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
   color: white;
   text-transform: uppercase;
+  letter-spacing: .4px;
 }
 
-/* line 10, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 11, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-project {
-  background-color: #BA95D5;
+  background-color: #cde4b6;
+  color: black;
+  font-weight: 600;
 }
 
-/* line 13, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 16, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-project:hover {
-  background-color: #c6a7dc;
+  background-color: #daebc9;
 }
 
-/* line 18, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 21, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-submit {
   background-color: #838383;
 }
 
-/* line 21, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 24, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-submit:hover {
   background-color: #909090;
 }
 
-/* line 25, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 28, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-nav {
   margin: 1rem;
   background-color: #0074DD;
 }
 
-/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
+/* line 32, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-nav:hover {
   background-color: #0081f7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -302,7 +325,7 @@ body {
     radial-gradient(circle at bottom, #fff -30%, transparent 70%),
     linear-gradient(to right, #134a8e, #00b6f1 50%),
     #fff; */
-  background: radial-gradient(circle at bottom, white, transparent 80%), linear-gradient(to top, black 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #0074DD;
+  background: radial-gradient(circle at bottom, white, transparent 80%), linear-gradient(to top, black 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #cde4b6;
   animation: bg 20s infinite;
 }
 
@@ -314,7 +337,7 @@ body {
     background-color: black;
   }
   50% {
-    background-color: #0074DD;
+    background-color: #cde4b6;
   }
   75% {
     background-color: black;
