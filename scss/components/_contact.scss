@@ -8,15 +8,13 @@
     width: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
 }
 
 .icon-social {
     display: flex;
     justify-content: center;
+    margin:5px;
 }
 
-.icon {
-    height: 50px;
-    width: 50px;
-}

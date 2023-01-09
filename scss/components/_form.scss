@@ -64,4 +64,24 @@
     "message message";
     grid-column-gap: 2rem;
     }
+    .label-wrapper{
+        justify-content: flex-start !important; 
+        margin-bottom: 5px;
+        margin-left: 2px;
+    }
+    .submit-wrapper{
+        display: flex;
+        justify-content: flex-start !important;
+    }
+}
+
+.label-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }

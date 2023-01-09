@@ -144,6 +144,30 @@ body {
     grid-template-areas: "first last" "email email" "subject subject" "message message";
     grid-column-gap: 2rem;
   }
+  /* line 67, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  .label-wrapper {
+    justify-content: flex-start !important;
+    margin-bottom: 5px;
+    margin-left: 2px;
+  }
+  /* line 72, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  .submit-wrapper {
+    display: flex;
+    justify-content: flex-start !important;
+  }
+}
+
+/* line 78, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+.label-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 83, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+.submit-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_details.scss */
@@ -258,18 +282,14 @@ body {
   width: auto;
   display: flex;
   flex-direction: row;
-}
-
-/* line 14, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
-.icon-social {
-  display: flex;
   justify-content: center;
 }
 
-/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
-.icon {
-  height: 50px;
-  width: 50px;
+/* line 15, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+.icon-social {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
