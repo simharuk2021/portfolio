@@ -7,8 +7,8 @@
     padding: 10px 10px 20px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    background: rgb(186,149,213);
-    background: linear-gradient(180deg, rgba(205, 228, 182,1) 0%, rgba(131,131,131,1) 50%, rgba(230,242,255,1) 100%);
+    background: lighten($orchid, 30%);
+   
     margin:  1rem 0px;
     top:0px;
 
@@ -43,6 +43,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    
 
     @include media-query(medium) {
 
