@@ -471,6 +471,11 @@ body {
   margin-bottom: 2rem;
 }
 
+/* line 1, ../PROJECTS/SCION/portfolio/scss/components/_coding.scss */
+.coding-image {
+  object-fit: cover;
+}
+
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
 .body-style {
   height: auto;
