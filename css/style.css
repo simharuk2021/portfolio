@@ -553,6 +553,12 @@ hr {
 }
 
 /* line 10, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+.scheme-wrapper p {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* line 15, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 ul {
   list-style-type: none;
   display: flex;
