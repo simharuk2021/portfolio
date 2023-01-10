@@ -542,4 +542,23 @@ hr {
   color: #6F75A7;
 }
 
+/* line 1, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+.scheme-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 3rem;
+}
+
+/* line 10, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */

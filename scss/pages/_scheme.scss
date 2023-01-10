@@ -1,0 +1,16 @@
+.scheme-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    padding:3rem;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
