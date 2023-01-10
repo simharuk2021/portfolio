@@ -452,6 +452,23 @@ body {
   text-decoration: none !important;
   color: white;
   margin-top: 2rem;
+  top: 0px;
+  font-size: xx-large;
+}
+
+/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+.banner-arrow:hover {
+  color: white;
+  position: relative;
+  top: 10px;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+/* line 37, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+.banner-paragraph {
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */

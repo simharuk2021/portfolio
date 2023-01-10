@@ -22,4 +22,19 @@
     text-decoration: none !important;
     color: white;
     margin-top:2rem;
+    top:0px;
+    font-size: xx-large;
+    
+
+    &:hover{
+        color:white;
+        position: relative;
+        top: 10px;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+}
+.banner-paragraph{
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
