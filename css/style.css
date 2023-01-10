@@ -516,4 +516,19 @@ body {
   }
 }
 
+/* line 1, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+/* line 9, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+.about-wrapper p {
+  padding: 1rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

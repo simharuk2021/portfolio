@@ -1,0 +1,12 @@
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color:white;
+}
+
+.about-wrapper p {
+    padding:1rem;
+    text-align: center;
+}
