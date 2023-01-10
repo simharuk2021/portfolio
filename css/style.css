@@ -26,6 +26,11 @@ body {
   z-index: 2;
 }
 
+/* line 13, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+.container-fluid {
+  padding: 0;
+}
+
 /* line 3, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .sidebar-wrapper {
   display: flex;
@@ -34,19 +39,18 @@ body {
   position: sticky;
   top: 0;
   overflow-y: visible;
-  margin-bottom: 50px;
   background-color: black;
   z-index: 1;
   border: 3px solid white;
 }
 
-/* line 16, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 15, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .link {
   display: flex;
   justify-content: center;
 }
 
-/* line 22, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 21, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-wrapper {
   display: flex;
   flex-direction: row;
@@ -54,16 +58,16 @@ body {
 }
 
 @media (min-width: 767px) {
-  /* line 29, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 28, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .column-wrapper {
     display: flex;
     flex-direction: row;
   }
-  /* line 34, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 33, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar {
     width: 160px;
   }
-  /* line 37, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 36, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar-wrapper {
     width: 170px;
     position: sticky;
@@ -73,9 +77,14 @@ body {
     margin-bottom: unset;
     justify-content: flex-start;
   }
+  /* line 47, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  .banner-image {
+    width: 100%;
+    height: 500px;
+  }
 }
 
-/* line 50, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 54, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-image {
   height: 100px;
 }
@@ -346,7 +355,7 @@ body {
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-image {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
