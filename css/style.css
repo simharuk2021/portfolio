@@ -532,18 +532,12 @@ body {
 }
 
 /* line 14, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
-.hr-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 20, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
 hr {
   border-top: 1px solid #0A535A;
   width: 80%;
 }
 
-/* line 25, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+/* line 19, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
 .qual {
   color: #6F75A7;
 }
