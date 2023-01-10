@@ -11,6 +11,7 @@
 .contact{
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 @include media-query(large){

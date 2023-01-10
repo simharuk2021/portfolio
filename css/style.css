@@ -7,26 +7,18 @@
   max-width: 1200px;
 }
 
-/* line 9, ../PROJECTS/SCION/portfolio/scss/layout/_container.scss */
-.contact {
-  background: #cbb9d8;
-  background: linear-gradient(0deg, #cbb9d8 0%, #838383 30%, #e6f2ff 100%);
-  padding: 50px;
-}
-
 /* line 3, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
 body {
-  background-color: #e6f2ff;
   letter-spacing: .4px;
   font-family: Poppins, sans-serif;
 }
 
-/* line 9, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+/* line 8, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
 .main-content {
   z-index: 2;
 }
 
-/* line 13, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+/* line 12, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
 .container-fluid {
   padding: 0;
 }
@@ -130,46 +122,47 @@ body {
 
 /* line 39, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .form-control:hover, .form-control :focus {
-  box-shadow: 0 0 3px 3px #cde6fe;
+  box-shadow: 0 0 3px 3px white;
   cursor: pointer;
 }
 
-/* line 47, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 46, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 ::placeholder {
   font-style: italic;
   font-weight: 400;
-  color: #838383;
+  color: #6F75A7;
   padding: 1rem;
 }
 
-/* line 54, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 53, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 #message {
   height: 200px;
 }
 
 @media (min-width: 767px) {
-  /* line 59, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 58, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .form {
     grid-template-areas: "first last" "email email" "subject subject" "message message";
     grid-column-gap: 2rem;
   }
-  /* line 67, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 66, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .label-wrapper {
     justify-content: flex-start !important;
     margin-bottom: 5px;
     margin-left: 2px;
   }
-  /* line 72, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 71, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .submit-wrapper {
     display: flex;
     justify-content: flex-start !important;
   }
 }
 
-/* line 78, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 77, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .label-wrapper {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 /* line 83, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
@@ -195,10 +188,11 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 @media (min-width: 991px) {
-  /* line 17, ../PROJECTS/SCION/portfolio/scss/components/_details.scss */
+  /* line 18, ../PROJECTS/SCION/portfolio/scss/components/_details.scss */
   .contact {
     display: flex;
     flex-direction: row;
@@ -207,7 +201,7 @@ body {
   }
 }
 
-/* line 25, ../PROJECTS/SCION/portfolio/scss/components/_details.scss */
+/* line 26, ../PROJECTS/SCION/portfolio/scss/components/_details.scss */
 .button-submit {
   width: 100px;
 }
@@ -218,9 +212,9 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 10px 10px 20px 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(240, 236, 236, 0.2), 0 6px 20px 0 rgba(204, 196, 196, 0.19);
   border-radius: 10px;
-  background: #cbb9d8;
+  background: white;
   margin: 1rem 0px;
   top: 0px;
 }
@@ -282,18 +276,22 @@ body {
 .contact {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: black;
+  padding: 50px;
 }
 
-/* line 6, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+/* line 8, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
 .social-wrapper {
   height: 100px;
   width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #BBDADD;
+  border-radius: 5px;
 }
 
-/* line 15, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
 .icon-social {
   display: flex;
   justify-content: center;
@@ -314,37 +312,37 @@ body {
 
 /* line 11, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-project {
-  background-color: #81599F;
+  background-color: #0A535A;
   color: white;
 }
 
 /* line 16, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-submit {
-  background-color: #0074DD;
+  background-color: #0A535A;
 }
 
 /* line 19, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-submit:hover {
-  background-color: #0081f7;
+  background-color: #0d6871;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* line 24, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-nav {
   margin: 1rem;
-  background-color: #0074DD;
+  background-color: #0A535A;
 }
 
 /* line 28, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-nav:hover {
-  background-color: #118eff;
+  background-color: #0f7d88;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* line 34, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
 .button-selected {
   margin: 1rem;
-  background-color: #81599F;
+  background-color: #6F75A7;
 }
 
 /* line 38, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */
@@ -361,24 +359,7 @@ body {
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
 .body-style {
   height: auto;
-  background: radial-gradient(circle at bottom, white, transparent 80%), linear-gradient(to top, black 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #cde4b6;
-  animation: bg 20s infinite;
-}
-
-@keyframes bg {
-  0%,
-  100% {
-    background-color: black;
-  }
-  25% {
-    background-color: black;
-  }
-  50% {
-    background-color: #0074DD;
-  }
-  75% {
-    background-color: black;
-  }
+  background-color: #091217;
 }
 
 /*# sourceMappingURL=style.css.map */

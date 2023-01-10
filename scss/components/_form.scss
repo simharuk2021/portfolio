@@ -37,8 +37,7 @@
         height: 3rem;
     
         &:hover, :focus{
-            box-shadow: 0 0 3px 3px lighten($blue-light, 10%);
-            // background-color: $blue-light;
+            box-shadow: 0 0 3px 3px white;
             cursor: pointer;
         }
     }
@@ -78,6 +77,7 @@
 .label-wrapper{
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .submit-wrapper{
