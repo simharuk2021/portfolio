@@ -536,30 +536,43 @@ body {
   justify-content: center;
   background-color: black;
   color: white;
+  align-items: center;
 }
 
-/* line 9, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+/* line 10, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
 .about-wrapper p {
   padding: 1rem;
   text-align: center;
 }
 
-/* line 14, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+/* line 15, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
 hr {
   border-top: 1px solid #0A535A;
   width: 80%;
 }
 
-/* line 19, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+/* line 20, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
 .qual {
   color: #6F75A7;
 }
 
-/* line 22, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+/* line 23, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
 .portrait-wrapper {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+
+/* line 29, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+.about-link {
+  text-decoration: none;
+  color: #6F75A7;
+}
+
+/* line 32, ../PROJECTS/SCION/portfolio/scss/pages/_about.scss */
+.about-link:hover {
+  text-decoration: none;
+  color: #8f93ba;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */

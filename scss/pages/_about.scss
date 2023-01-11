@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: black;
     color:white;
+    align-items: center;
 }
 
 .about-wrapper p {
@@ -23,4 +24,13 @@ hr{
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+.about-link{
+    text-decoration: none;
+    color:$grey;
+    &:hover{
+        text-decoration: none;
+        color:lighten($grey, 10%);
+    }
 }
