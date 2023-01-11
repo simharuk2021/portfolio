@@ -12,6 +12,31 @@
     border: 3px solid white;
 }
 
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:1rem;
+}
+
+@include media-query(medium) {
+    .sidebar-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        overflow-y: visible;
+        background-color: black;
+        z-index: 1;
+        border: 3px solid white;
+    }
+    .sidebar{
+        justify-content: unset;
+    }
+}
+
 .link {
     display: flex;
     justify-content: center;
