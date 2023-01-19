@@ -623,12 +623,13 @@ body {
 /* Style the navigation menu */
 /* line 25, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 #myLinks {
+  display: none;
   overflow: hidden;
   position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-/* line 32, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+/* line 33, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 .burger-wrapper {
   display: flex;
   justify-content: center;
