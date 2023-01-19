@@ -92,26 +92,34 @@ body {
     z-index: 1;
     border: 3px solid white;
   }
-  /* line 35, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 36, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar {
     justify-content: unset;
   }
+  /* line 40, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  #myLinks {
+    display: block !important;
+  }
+  /* line 44, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  #burger {
+    display: none !important;
+  }
 }
 
-/* line 40, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 50, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .link {
   display: flex;
   justify-content: center;
 }
 
-/* line 46, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 56, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 54, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 64, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-image {
   height: 100px;
 }
@@ -620,12 +628,7 @@ body {
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-/* line 31, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-#myLinks {
-  display: none;
-}
-
-/* line 35, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+/* line 32, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 .burger-wrapper {
   display: flex;
   justify-content: center;
