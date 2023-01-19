@@ -1,0 +1,26 @@
+  /* Style the hamburger menu */
+  #burger {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  #burger:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the navigation menu */
+#myLinks {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+   #myLinks {
+    display: none;
+  }
