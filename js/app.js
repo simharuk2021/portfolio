@@ -8,3 +8,15 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+  var i = 0;
+var txt = 'My name is Simon Hart'; /* The text */
+var speed = 150; /* The speed/duration of the effect in milliseconds */
+
+window.onload = function typeWriter() {
+  if (i < txt.length) {
+    document.querySelector(".banner-text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
