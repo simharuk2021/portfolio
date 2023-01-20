@@ -57,37 +57,13 @@ body {
   }
 }
 
-/* line 3, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-/* line 16, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* line 25, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.sidenav a:hover {
-  color: #f1f1f1;
+/* line 42, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+.sidebar-wrapper {
+  width: 0px;
 }
 
 @media (min-width: 767px) {
-  /* line 56, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 60, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar-wrapper {
     display: flex;
     flex-direction: column;
@@ -99,36 +75,34 @@ body {
     z-index: 1;
     border: 3px solid white;
   }
-  /* line 68, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-  .sidebar {
-    justify-content: unset;
-  }
-  /* line 72, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-  #myLinks {
-    display: block !important;
-  }
-  /* line 76, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 73, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   #burger {
     display: none !important;
   }
+  /* line 77, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  .banner-arrow {
+    font-size: xx-large;
+  }
 }
 
-/* line 82, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 90, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .link {
   display: flex;
   justify-content: center;
 }
 
-/* line 88, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 96, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: black;
 }
 
-/* line 96, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 105, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-image {
   height: 100px;
+  max-width: 100%;
 }
 
 @media (min-width: 767px) {
@@ -562,7 +536,6 @@ body {
   color: white;
   margin-top: 2rem;
   top: 0px;
-  font-size: xx-large;
 }
 
 /* line 29, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */

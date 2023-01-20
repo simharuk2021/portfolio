@@ -1,7 +1,7 @@
 // toggles the display from none to block based on a conditional - used to render the menu when the hamburger icon is clicked
 function toggleNav() {
-    var nav= document.getElementById("mySidenav");
-    if (nav.style.width == "250px") {
+    var nav= document.querySelector(".sidebar-wrapper");
+    if (nav.style.display == "flex") {
       nav.style.width = "0px";
     } else {
       nav.style.width = "250px";
@@ -22,14 +22,16 @@ window.onload = function textType() {
 }
 
 // /* Set the width of the side navigation to 250px */
-// function openNav() {
-//   document.querySelector("sidebar").style.width = "250px";
-// }
+function openNav() {
+  document.querySelector(".sidebar-wrapper").display = "unset";
+  // document.getElementById("burger").style.display = "none";
+}
 
 // /* Set the width of the side navigation to 0 */
-// function closeNav() {
-//   document.querySelector("sidebar").style.width = "0px";
-// }
+function closeNav() {
+  document.getElementsByClassName("sidebar").style.width = "0px";
+  document.getElementById("burger").style.display = "unset";
+}
 
 // function openNav() {
 //   document.getElementById("mySidenav").style.width = "250px";
@@ -38,3 +40,16 @@ window.onload = function textType() {
 // function closeNav() {
 //   document.getElementById("mySidenav").style.width = "0";
 // }
+
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     var div =  document.getElementsByClassName('sidenav')
+//     div.classList.remove.display.style('block');
+//   } else {
+//     document.body.style.backgroundColor = "pink";
+//   }
+// }
+
+// var x = window.matchMedia("(min-width: 767px)")
+// myFunction(x) // Call listener function at run time
+// x.addListener(myFunction) // Attach listener function on state changes
