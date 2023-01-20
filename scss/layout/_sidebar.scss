@@ -1,51 +1,21 @@
 @import'../utilities/media-query';
 
-.column-wrapper {
+.sidebar-wrapper {
+    display: none;
+}
+
+.sidebar {
     display: flex;
     flex-direction: row;
-}
-
-.sidebar {
-    width: 160px;
-
-    &-wrapper {
-        width: 170px;
-        position: sticky;
-        top: 0;
-        overflow-x: visible;
-        height: 100vh;
-        margin-bottom: unset;
-        justify-content: flex-start;
-
-    }
-}
-
-.sidebar-wrapper {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    position: sticky;
-    top: 0;
-    overflow-y: visible;
-    background-color: black;
-    z-index: 1;
-    border: 3px solid white;
-}
-
-.sidebar {
-    justify-content: unset;
-}
-
-#myLinks {
-    display:
-        block !important;
+    // flex-wrap: wrap;
+    margin: 1rem;
 }
 
 @include media-query(medium) {
     .sidebar-wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         position: sticky;
         top: 0;
         overflow-y: visible;
