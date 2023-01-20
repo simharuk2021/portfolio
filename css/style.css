@@ -598,32 +598,36 @@ body {
 /* line 2, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 #burger {
   background: black;
-  display: block;
+  display: flex;
   border: 1px solid white;
   padding: 1rem;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  position: fixed;
+  z-index: 5;
+  margin-left: 1rem;
 }
 
-/* line 11, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+/* line 15, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 .fa {
   color: white;
 }
 
 /* Add a grey background color on mouse-over */
-/* line 16, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+/* line 20, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 #burger:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+/* line 23, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 #burger:hover .fa {
   color: black;
 }
 
 /* Style the navigation menu */
-/* line 25, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 #myLinks {
   display: none;
   overflow: hidden;
@@ -631,13 +635,6 @@ body {
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-/* line 33, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-.burger-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
 .body-style {
   height: auto;

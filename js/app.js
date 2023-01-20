@@ -9,14 +9,14 @@ function myFunction() {
     }
   }
 
-  var i = 0;
+var i = 0;
 var txt = 'My name is Simon Hart'; /* The text */
 var speed = 150; /* The speed/duration of the effect in milliseconds */
 
-window.onload = function typeWriter() {
+window.onload = function textType() {
   if (i < txt.length) {
     document.querySelector(".banner-text").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(textType, speed);
   }
 }

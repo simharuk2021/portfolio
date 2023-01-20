@@ -1,11 +1,15 @@
   /* Style the hamburger menu */
   #burger {
     background: black;
-    display: block;
+    display: flex;
     border:1px solid white;
     padding: 1rem;
     border-radius: 5px;
-    margin-bottom: 1rem
+    justify-content: flex-start;
+    margin-top: 1rem;
+    position:fixed;
+    z-index: 5;
+    margin-left:1rem;
     
   }
   .fa {
@@ -31,7 +35,7 @@
   /* Hide the links inside the navigation menu (except for logo/home) */
 
   .burger-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
   }
