@@ -449,9 +449,9 @@ body {
   justify-content: center;
 }
 
-/* line 13, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+/* line 14, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
 .social-wrapper {
-  height: 100px;
+  height: auto;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -461,11 +461,13 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 25, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+/* line 26, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
 .icon-social {
   display: flex;
   justify-content: center;
   margin: 5px;
+  height: 100px;
+  width: 100px;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_buttons.scss */

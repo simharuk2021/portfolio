@@ -8,10 +8,11 @@
 .fix-wrap{
     display: flex;
     justify-content: center;
+  
 }
 
 .social-wrapper {
-    height: 100px;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -26,4 +27,6 @@
     display: flex;
     justify-content: center;
     margin:5px;
+    height:100px;
+    width:100px;
 }
