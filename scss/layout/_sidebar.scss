@@ -1,5 +1,25 @@
 @import'../utilities/media-query';
 
+.column-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 160px;
+
+    &-wrapper {
+        width: 170px;
+        position: sticky;
+        top: 0;
+        overflow-x: visible;
+        height: 100vh;
+        margin-bottom: unset;
+        justify-content: flex-start;
+
+    }
+}
+
 .sidebar-wrapper {
     display: flex;
     flex-direction: column;
@@ -13,11 +33,12 @@
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 1rem;
+    justify-content: unset;
+}
+
+#myLinks {
+    display:
+        block !important;
 }
 
 @include media-query(medium) {
