@@ -47,9 +47,15 @@ body {
 /* line 3, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .sidebar-wrapper {
   display: none;
+  position: fixed;
+  z-index: 5;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.9;
+  transition: 0.5s;
 }
 
-/* line 7, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 13, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .sidebar {
   display: flex;
   flex-direction: row;
@@ -58,7 +64,7 @@ body {
 }
 
 @media (min-width: 767px) {
-  /* line 16, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 22, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar-wrapper {
     display: flex;
     flex-direction: column;
@@ -69,34 +75,34 @@ body {
     z-index: 1;
     border: 3px solid white;
   }
-  /* line 27, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 33, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar {
     justify-content: unset;
   }
-  /* line 31, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 37, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   #myLinks {
     display: block !important;
   }
-  /* line 35, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 41, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   #burger {
     display: none !important;
   }
 }
 
-/* line 41, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 47, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .link {
   display: flex;
   justify-content: center;
 }
 
-/* line 47, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 53, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 55, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 61, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-image {
   height: 100px;
 }
