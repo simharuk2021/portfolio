@@ -20,7 +20,7 @@
 
 @include media-query(medium) {
     .sidebar-wrapper {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         position: sticky;
         top: 0;
