@@ -1,37 +1,19 @@
-  /* Style the hamburger menu */
-  #burger {
-    background: black;
-    display: block;
-    border:1px solid white;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    margin-top:3rem;
-  }
-  .fa {
-    color: white;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  #burger:hover {
-    background-color: #ddd;
-    color: black;
-    .fa{
-        color:black;
-    }
-  }
+.hamburger{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
 
-//   /* Style the navigation menu */
-// #myLinks {
-//   display: none;
-//     overflow: hidden;
-//     position: relative;
-//   }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-  .burger-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.banner-headline {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

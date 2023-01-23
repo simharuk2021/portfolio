@@ -7,26 +7,12 @@
   max-width: 1200px;
 }
 
-/* line 3, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
-body {
-  letter-spacing: .4px;
-  font-family: Poppins, sans-serif;
-}
-
-/* line 8, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
-.main-content {
-  z-index: 2;
-}
-
-/* line 12, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
-.container-fluid {
-  padding: 0;
-}
-
-/* line 16, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
-.column-wrapper {
+/* line 21, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+.content-wrapper {
   display: flex;
   flex-direction: row;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 767px) {
@@ -44,92 +30,41 @@ body {
   }
 }
 
-/* line 3, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.sidebar-wrapper {
-  display: none;
-  position: fixed;
-  overflow-y: visible;
-  z-index: 5;
-  height: 100vh;
+/* line 4, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+.sidebar {
+  float: left;
+  overflow: visible;
   background-color: black;
   opacity: 0.9;
+  margin-left: 0;
+  z-index: 2;
 }
 
-/* line 13, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.sidebar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem;
+/* Add padding and border to inner content
+for better animation effect */
+/* line 17, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+.box-inner {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #a29415;
 }
 
-@media (min-width: 767px) {
-  /* line 21, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-  .sidebar-wrapper {
-    display: flex !important;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-    overflow-y: visible;
-    background-color: black;
-    z-index: 1;
-    border: 3px solid white;
-  }
-  /* line 32, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-  .sidebar {
-    justify-content: unset;
-  }
-  /* line 36, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-  #myLinks {
-    display: block !important;
-  }
-  /* line 41, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-  #burger {
-    display: none !important;
-  }
-  /* line 45, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-  .close-wrapper {
-    display: none;
-  }
-}
-
-/* line 50, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.link {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 56, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 72, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
-/* line 64, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 80, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-image {
   height: 100px;
 }
 
-/* line 68, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 84, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .close-wrapper {
   font-display: flex;
   justify-content: flex-end;
   margin-bottom: 2rem;
-}
-
-/* line 74, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.closebtn {
-  position: absolute;
-  right: 25px;
-  color: white;
-  font-size: x-large;
-}
-
-/* line 80, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
-.closebtn:hover {
-  text-decoration: none;
-  color: grey;
 }
 
 @media (min-width: 767px) {
@@ -499,19 +434,11 @@ body {
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-image {
-  width: 100%;
   height: 70vh;
-  z-index: 2;
+  z-index: 1;
 }
 
-/* line 7, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.banner-center {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-/* line 13, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 12, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-headline {
   position: absolute;
   top: 50%;
@@ -519,7 +446,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* line 21, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 20, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow {
   text-decoration: none !important;
   color: white;
@@ -528,7 +455,7 @@ body {
   font-size: xx-large;
 }
 
-/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 28, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow:hover {
   color: white;
   position: relative;
@@ -537,26 +464,19 @@ body {
   cursor: pointer;
 }
 
-/* line 38, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 37, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-text {
   font-weight: 600;
 }
 
-/* line 42, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 41, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-headline p {
   font-style: italic;
 }
 
-/* line 46, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 45, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-paragraph {
   font-size: 20px;
-}
-
-/* line 51, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.portrait {
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_coding.scss */
@@ -564,41 +484,24 @@ body {
   object-fit: cover;
 }
 
-/* Style the hamburger menu */
-/* line 2, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-#burger {
-  background: black;
-  display: block;
-  border: 1px solid white;
-  padding: 1rem;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-}
-
-/* line 11, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-.fa {
+/* line 1, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+.hamburger {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* Add a grey background color on mouse-over */
-/* line 16, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-#burger:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-#burger:hover .fa {
-  color: black;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-/* line 33, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-.burger-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* line 13, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
+.banner-headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */

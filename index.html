@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+        <meta charset="utf-8">
         <title>Simon's Portfolio</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -9,228 +10,58 @@
         <meta name="keywords"
             content="HTML, CSS, SASS, JavaScript,Projects, Developer, Website, GitHub, Netmatters, Treehouse, Portfolio">
         <meta name="author" content="Simon Hart">
-        <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="css/normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/x-icon" href="./img/simharuk-low-resolution-logo-white-on-black-background.png">
+        <link href="css/hamburgers.css" rel="stylesheet">
     </head>
 
-    <body class="body-style">
-
-        <div class="column-wrapper">
-
-            <div class="sidebar-wrapper">
-                <div class="logo-wrapper">
-                    <div class="logo">
-                        <a href="./index.html"><img alt="personal-logo" class="logo-image"
-                                src="./img/simharuk-low-resolution-logo-white-on-black-background.png"></a>
-                    </div>
-                </div>
-                <div class="sidebar">
-                    <div id="myLinks">
-                        <div class="close-wrapper">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeButton()">&times;</a>
-                        </div>
-                        <div class="link">
-                            <a href="./index.html"><button class="button button-selected">Home</button></a>
-                        </div>
-                        <div class="link">
-                            <a href="./about.html"><button class="button button-nav">About Me</button></a>
-                        </div>
-                        <div class="link">
-                            <a href="./examples.html"><button class="button button-nav">Coding Examples</button></a>
-                        </div>
-                        <div class="link">
-                            <a href="./scheme.html"><button class="button button-nav">SCS Scheme</button></a>
-                        </div>
-                        <div class="link">
-                            <a href="#contact-section"><button class="button button-nav">Contact Me</button></a>
-                        </div>
-                    </div>
+    <body>
+        <div class ="content-wrapper container-fluid">
+        <div class="sidebar">
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <a href="./index.html"><img alt="personal-logo" class="logo-image"
+                            src="./img/simharuk-low-resolution-logo-white-on-black-background.png"></a>
                 </div>
             </div>
-
-            <div class="main-content container-fluid">
-
-                <section class="banner">
-
-                    <div class="banner-center">
-                        <img alt="artistic banner image" class="banner-image"
-                            src="./img/pexels-mikhail-nilov-7676849.jpg">
-                        <div class="banner-headline">
-                            <div class="link" id="burger-wrap">
-                                <a href="javascript:void(0);" id="burger" onclick="myFunction()">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                            </div>
-                            <div class="portrait-wrapper">
-                                <img alt="personal avatar" src="./img/AvatarMaker.png" class="portrait">
-                            </div>
-                            <h1 class="banner-text">My name is Simon Hart</h1>
-                            <h2 class="banner-paragraph">I am a Trainee Web Developer</h2>
-                            <p>Click the arrow</p>
-                            <a href="#project-section" class="banner-arrow"><span><i
-                                        class="fa-solid fa-arrow-down fa-2xl"></i></span></a>
-
-                        </div>
-                    </div>
-                </section>
-
-                <div class="wrapper container">
-                    <section class="container" id="project-section">
-                        <div class="projects-wrapper">
-
-                            <a class="project project-1" href="https://simharuk2021.github.io/reflection_project/"
-                                target="_blank">
-                                <h3 class="project-headline">HTML & CSS reflection</h3>
-                                <img alt="netmatters project" class="project-image" src="./img/netmatters.PNG">
-                                <br>
-                                <div class="project-icons">
-                                    <img class="p-icon" src="./img/317755_badge_html_html5_achievement_award_icon.png">
-                                    <img class="p-icon" src="./img/317756_badge_css_css3_achievement_award_icon.png">
-                                    <img class="p-icon" src="./img/1297046_code_compilator_css_design_sass_icon.png">
-                                </div>
-                                <p class="project-text">This project used HTML and CSS compiled with SASS to recreate a
-                                    responsive clone of the netmatters
-                                    official website
-                                </p>
-                                <!-- <div class="project-button-container">
-                                    <button class="button button-project">Project 1</button>
-                                </div> -->
-                            </a>
-                            <a class="project project-2">
-
-                                <img alt="coming soon placeholder" class="project-image"
-                                    src="./img/coming-ge25ec7736_1920.jpg">
-                                <br>
-                                <div class="project-button-container">
-                                    <button class="button button-project">Project 2</button>
-                                </div>
-                            </a>
-                            <a class="project project-3">
-                                <img alt="coming soon placeholder" class="project-image"
-                                    src="./img/coming-ge25ec7736_1920.jpg">
-                                <br>
-                                <div class="project-button-container">
-                                    <button class="button button-project">Project 3</button>
-                                </div>
-
-                            </a>
-                            <a class="project project-4">
-                                <img alt="coming soon placeholder" class="project-image"
-                                    src="./img/coming-ge25ec7736_1920.jpg">
-                                <br>
-                                <div class="project-button-container">
-                                    <button class="button button-project">Project 4</button>
-                                </div>
-
-                            </a>
-                            <a class="project project-5">
-                                <img alt="coming soon placeholder" class="project-image"
-                                    src="./img/coming-ge25ec7736_1920.jpg">
-                                <br>
-                                <div class="project-button-container">
-                                    <button class="button button-project">Project 5</button>
-                                </div>
-
-                            </a>
-                            <a class="project project-6">
-                                <img alt="coming soon placeholder" class="project-image"
-                                    src="./img/coming-ge25ec7736_1920.jpg">
-                                <br>
-                                <div class="project-button-container">
-                                    <button class="button button-project">Project 6</button>
-                                </div>
-
-                            </a>
-                        </div>
-                    </section>
-
-                    <section class="contact" id="contact-section">
-                        <div class="details-wrapper">
-                            <div class="details">
-                                <div class="headline">
-                                    <h1>Get in Touch</h1>
-                                </div>
-                                <div class="headline-p">
-                                    <p>simonghart3@gmail.com</p>
-                                </div>
-                                <div class="phone">
-                                    </button>07539065047</button>
-                                </div>
-                                <br>
-                                <div class="headline-bottom-text">
-                                    <p>or check the links below</p>
-                                </div>
-                            </div>
-                            <div class="fix-wrap">
-                                <div class="social-wrapper">
-                                    <a href="https://github.com/simharuk2021" class="icon-social" target="_blank">
-                                        <img alt="github icon link" src="./img/8546919_github_square_icon.png">
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/simon-g-hart/" class="icon-social"
-                                        target="_blank">
-                                        <img alt="linkedin icon link" src="./img/6929238_linkedin_logo_icon.png">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="form-wrapper"> -->
-
-                        <div class="form">
-                            <!-- <div class="names-section"> -->
-                            <div class="name-first">
-                                <div class="label-wrapper">
-                                    <label for="name">First Name: </label>
-                                </div>
-                                <input type="text" class="form-control" placeholder="First name*">
-                            </div>
-                            <div class="name-last">
-                                <div class="label-wrapper">
-                                    <label for="name">Last Name: </label>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Last name*">
-                            </div>
-                            <!-- </div> -->
-                            <div class="email">
-                                <div class="label-wrapper">
-                                    <label for="name">E-Mail: </label>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Email Address">
-                            </div>
-                            <div class="subject">
-                                <div class="label-wrapper">
-                                    <label for="name">Subject: </label>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="message">
-                                <div class="label-wrapper">
-                                    <label for="name">Message: </label>
-                                </div>
-                                <textarea type="text" class="form-control" id="message"
-                                    placeholder="Message"></textarea>
-                            </div>
-                            <div class="submit-wrapper">
-                                <button class="button button-submit none">Submit</button>
-                            </div>
-                        </div> <!-- </div> -->
-                    </section>
-                </div>
-
-                <footer>
-
-                </footer>
+            <div class="link">
+                <a href="./index.html"><button class="button button-selected">Home</button></a>
+            </div>
+            <div class="link">
+                <a href="./about.html"><button class="button button-nav">About Me</button></a>
+            </div>
+            <div class="link">
+                <a href="./examples.html"><button class="button button-nav">Coding Examples</button></a>
+            </div>
+            <div class="link">
+                <a href="./scheme.html"><button class="button button-nav">SCS Scheme</button></a>
+            </div>
+            <div class="link">
+                <a href="#contact-section"><button class="button button-nav">Contact Me</button></a>
             </div>
         </div>
-        <script src="js/app.js"></script>
+        <div class="picture-wrap">
+      
+            <img alt="artistic banner image" class="banner-image"
+                src="./img/pexels-mikhail-nilov-7676849.jpg">
+                <div class = "burger-wrap">
+                    <button class="hamburger hamburger--collapse slide-toggle" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                    </div>   
+          
+            <div class="banner-headline">
+               <h1>some text</h1>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/app.js"></script>
     </body>
 
 </html>

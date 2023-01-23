@@ -1,19 +1,27 @@
 @import'../utilities/variables';
 
-body {
-    letter-spacing: .4px;
-    font-family: Poppins, sans-serif;
-}
+// body {
+//     letter-spacing: .4px;
+//     font-family: Poppins, sans-serif;
+// }
 
-.main-content {
-    z-index: 2
-}
+// .main-content {
+//     z-index: 2
+// }
 
-.container-fluid{
-    padding:0;
-}
+// .container-fluid{
+//     padding:0;
+// }
 
-.column-wrapper{
+// .column-wrapper{
+//     display: flex;
+//     flex-direction: row;
+// }
+
+.content-wrapper{
     display: flex;
     flex-direction: row;
+    padding-left:0;
+    padding-right: 0;
+    // justify-content: flex-start;
 }
