@@ -48,11 +48,11 @@ body {
 .sidebar-wrapper {
   display: none;
   position: fixed;
+  overflow-y: visible;
   z-index: 5;
   height: 100vh;
   background-color: black;
   opacity: 0.9;
-  transition: 0.5s;
 }
 
 /* line 13, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
@@ -64,7 +64,7 @@ body {
 }
 
 @media (min-width: 767px) {
-  /* line 22, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 21, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar-wrapper {
     display: flex !important;
     flex-direction: column;
@@ -75,11 +75,11 @@ body {
     z-index: 1;
     border: 3px solid white;
   }
-  /* line 33, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 32, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   .sidebar {
     justify-content: unset;
   }
-  /* line 37, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  /* line 36, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
   #myLinks {
     display: block !important;
   }
@@ -87,24 +87,49 @@ body {
   #burger {
     display: none !important;
   }
+  /* line 45, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+  .close-wrapper {
+    display: none;
+  }
 }
 
-/* line 47, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 50, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .link {
   display: flex;
   justify-content: center;
 }
 
-/* line 53, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 56, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 61, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+/* line 64, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
 .logo-image {
   height: 100px;
+}
+
+/* line 68, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+.close-wrapper {
+  font-display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+/* line 74, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+.closebtn {
+  position: absolute;
+  right: 25px;
+  color: white;
+  font-size: x-large;
+}
+
+/* line 80, ../PROJECTS/SCION/portfolio/scss/layout/_sidebar.scss */
+.closebtn:hover {
+  text-decoration: none;
+  color: grey;
 }
 
 @media (min-width: 767px) {

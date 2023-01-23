@@ -3,18 +3,17 @@
 .sidebar-wrapper {
     display: none;
     position: fixed;
+    overflow-y: visible;
     z-index: 5;
-    height:100vh;
+    height: 100vh;
     background-color: black;
     opacity: 0.9;
-    transition: 0.5s;
 }
 
 .sidebar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // flex-wrap: wrap;
     margin: 1rem;
 }
 
@@ -38,10 +37,14 @@
         display:
             block !important;
     }
+
     #burger {
         display: none !important;
-      }
-    
+    }
+
+    .close-wrapper {
+        display: none;
+    }
 }
 
 .link {
@@ -60,4 +63,23 @@
 
 .logo-image {
     height: 100px;
+}
+
+.close-wrapper {
+    font-display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.closebtn {
+    position: absolute;
+    right: 25px;
+    color: white;
+    font-size: x-large;
+
+    &:hover {
+        text-decoration: none;
+        color: grey;
+
+    }
 }
