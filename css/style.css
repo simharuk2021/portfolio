@@ -453,29 +453,24 @@
   box-shadow: none;
 }
 
-/* line 1, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.banner-image {
-  height: 70vh;
-  z-index: 1;
-  max-width: 100%;
-}
-
-/* line 7, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.banner-center {
-  position: relative;
+/* line 26, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+.hero-section {
+  background: url("/img/pexels-mikhail-nilov-7676849.jpg") no-repeat;
+  background-size: cover;
+  height: 60vh;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 35, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+.hero-section .hero-section-text {
   color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
-/* line 13, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.banner-headline {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* line 21, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 43, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow {
   text-decoration: none !important;
   color: white;
@@ -484,7 +479,7 @@
   font-size: xx-large;
 }
 
-/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 51, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow:hover {
   color: white;
   position: relative;
@@ -493,26 +488,11 @@
   cursor: pointer;
 }
 
-/* line 38, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.banner-text {
-  font-weight: 600;
-}
-
-/* line 42, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.banner-headline p {
-  font-style: italic;
-}
-
-/* line 46, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
-.banner-paragraph {
-  font-size: 20px;
-}
-
-/* line 51, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 59, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .portrait {
   border-radius: 50%;
-  height: 50%;
-  width: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_coding.scss */
@@ -531,14 +511,6 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-}
-
-/* line 14, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
-.banner-headline {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
