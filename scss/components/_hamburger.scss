@@ -1,7 +1,8 @@
 .hamburger{
+  display: block;
   position: absolute;
   top: 10%;
-  left: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 
@@ -12,7 +13,7 @@
 
 .banner-headline {
 
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

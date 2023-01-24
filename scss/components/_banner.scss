@@ -1,13 +1,14 @@
 .banner-image {
     height: 70vh;
     z-index: 1;
+    max-width: 100%;
 }
 
-// .banner-center {
-//     position: relative;
-//     text-align: center;
-//     color: white;
-// }
+.banner-center {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
 .banner-headline {
 
@@ -47,8 +48,8 @@
     font-size: 20px;
 }
 
-// .portrait {
-//     border-radius: 50%;
-//     height: 50%;
-//     width: 50%;
-// }
+.portrait {
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}

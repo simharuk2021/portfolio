@@ -2,77 +2,47 @@
 
 
 .sidebar{
-    // display: flex;
-    // flex-direction: column;
-    float:left;
-    overflow: visible;
-    background-color: black;
-    opacity: 0.9;
-    margin-left: 0;
-    z-index: 2;
-    
+display: none;
+position: fixed;
+height:100vh;
+float:left;
+overflow: visible;
+background-color: black;
+opacity: 0.9;
+margin-left: 0;
+z-index: 2;
 }
-/* Add padding and border to inner content
-for better animation effect */
-.box-inner{
-    width: 400px;
-    padding: 10px;
-    border: 1px solid #a29415;
-}
-// .sidebar-wrapper {
-//     display:none;
-//     position: fixed;
-//     overflow-y: visible;
-//     z-index: 5;
-//     height:100vh;
-//     background-color: black;
-//     opacity: 0.9;
-//     // width:260px;
-// }
 
-// .sidebar {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     margin: 1rem;
-// }
 
 @include media-query(medium) {
-    // .sidebar-wrapper {
-    //     display: flex !important;
-    //     flex-direction: column;
-    //     position: sticky;
-    //     top: 0;
-    //     overflow-y: visible;
-    //     background-color: black;
-    //     z-index: 1;
-    //     border: 3px solid white;
-    // }
 
-    // .sidebar {
-    //     justify-content: unset;
-    // }
-
-    // #myLinks {
-    //     display:
-    //         block !important;
-    // }
-    // #burger {
-    //     display: none !important;
-    //   }
-    
+    .sidebar{
+        display: block !important;
+        position: fixed;
+        height:100vh;
+        float:left;
+        overflow: visible;
+        background-color: black;
+        opacity: 0.9;
+        margin-left: 0;
+        z-index: 2;
+        
+    }
+    /* Add padding and border to inner content
+    for better animation effect */
+    .box-inner{
+        width: 400px;
+        padding: 10px;
+        border: 1px solid #a29415;
+    }
+.hamburger{
+    display: none !important;
 }
 
-// .link {
-//     display: flex;
-//     justify-content: center;
-// }
-
-
+}
 .logo-wrapper {
     display: flex;
     flex-direction: row;
-    // justify-content: center;
 }
 
 
@@ -86,14 +56,3 @@ for better animation effect */
     justify-content: flex-end;
     margin-bottom: 2rem;
 }
-
-// .closebtn{  position: absolute;
-//     right: 25px;
-//     color:white;
-//     font-size: x-large;
-// &:hover{
-//     text-decoration: none;
-//     color:grey;
-    
-// }
-// }
