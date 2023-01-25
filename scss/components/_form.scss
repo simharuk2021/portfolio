@@ -20,7 +20,7 @@
     grid-area: message;
 }
 
-.form {
+.whole-form {
     display: grid;
 
     grid-template-areas:
@@ -57,7 +57,7 @@
 }
 
 @include media-query(medium) {
-    .form {
+    .whole-form {
         grid-template-areas:
             "first last"
             "email email"
@@ -101,4 +101,12 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
 }

@@ -129,13 +129,13 @@
 }
 
 /* line 23, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
-.form {
+.whole-form {
   display: grid;
   grid-template-areas: "first" "last" "email" "subject" "message";
 }
 
 /* line 33, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
-.form-control {
+.whole-form-control {
   background-color: #BBDADD;
   padding: 0;
   margin-bottom: 1rem;
@@ -144,8 +144,8 @@
 }
 
 /* line 40, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
-.form-control:hover,
-.form-control :focus {
+.whole-form-control:hover,
+.whole-form-control :focus {
   box-shadow: 0 0 3px 3px white;
   cursor: pointer;
 }
@@ -165,7 +165,7 @@
 
 @media (min-width: 767px) {
   /* line 60, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
-  .form {
+  .whole-form {
     grid-template-areas: "first last" "email email" "subject subject" "message message";
     grid-column-gap: 2rem;
   }
@@ -208,6 +208,16 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+}
+
+/* line 106, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+.input-control.success input {
+  border-color: #09c372;
+}
+
+/* line 110, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+.input-control.error input {
+  border-color: #ff3860;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_details.scss */
@@ -272,12 +282,12 @@
   padding: 10px 10px 20px 10px;
   box-shadow: 0 4px 8px 0 rgba(240, 236, 236, 0.2), 0 6px 20px 0 rgba(204, 196, 196, 0.19);
   border-radius: 10px;
-  background: white;
+  background: #e0eef0;
   margin: 1rem 0px;
   top: 0px;
 }
 
-/* line 15, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 16, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project:hover {
   position: relative;
   top: -10px;
@@ -286,7 +296,7 @@
   text-decoration: none;
 }
 
-/* line 23, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 24, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project-headline {
   text-align: center;
   padding: 1rem;
@@ -296,33 +306,33 @@
   letter-spacing: 1px;
 }
 
-/* line 31, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 32, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project-icons {
   display: flex;
   justify-content: center;
 }
 
-/* line 37, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 38, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .p-icon {
   height: 60px;
   width: 60px;
   margin: 1rem;
 }
 
-/* line 43, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 44, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project-text {
   padding: 1rem;
   color: #0A535A;
   font-weight: 600;
 }
 
-/* line 48, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 49, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .container {
   margin: none;
   padding: none;
 }
 
-/* line 52, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 53, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project-button-container {
   align-items: center;
   display: flex;
@@ -331,7 +341,7 @@
   padding: 1rem;
 }
 
-/* line 60, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 61, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project-image {
   max-width: 100%;
   height: 200px;
@@ -339,7 +349,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 67, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 68, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .projects-wrapper {
   padding: 50px 0px 25px 0px;
   align-items: center;
@@ -348,13 +358,13 @@
 }
 
 @media (min-width: 767px) {
-  /* line 67, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+  /* line 68, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
   .projects-wrapper {
     flex-direction: row !important;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  /* line 80, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+  /* line 81, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
   .projects-wrapper .project {
     flex: 1 1 333px;
     margin: 2rem;

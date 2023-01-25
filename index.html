@@ -14,14 +14,14 @@
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/271f4647db.js" crossorigin="anonymous"></script>
         <link href="css/normalize.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="./img/simharuk-low-resolution-logo-white-on-black-background.png">
         <link href="css/hamburgers.css" rel="stylesheet">
     </head>
 
     <body>
-        <!-- <div class="content-wrapper container-fluid"> -->
         <div class="sidebar">
             <div class="logo-wrapper">
                 <div class="logo">
@@ -84,22 +84,18 @@
                             responsive clone of the netmatters
                             official website
                         </p>
-                        <!-- <div class="project-button-container">
-                            <button class="button button-project">Project 1</button>
-                        </div> -->
+
                     </a>
                     <a class="project project-2">
 
-                        <img alt="coming soon placeholder" class="project-image"
-                            src="./img/coming-ge25ec7736_1920.jpg">
+                        <img alt="coming soon placeholder" class="project-image" src="./img/coming-ge25ec7736_1920.jpg">
                         <br>
                         <div class="project-button-container">
                             <button class="button button-project">Project 2</button>
                         </div>
                     </a>
                     <a class="project project-3">
-                        <img alt="coming soon placeholder" class="project-image"
-                            src="./img/coming-ge25ec7736_1920.jpg">
+                        <img alt="coming soon placeholder" class="project-image" src="./img/coming-ge25ec7736_1920.jpg">
                         <br>
                         <div class="project-button-container">
                             <button class="button button-project">Project 3</button>
@@ -107,8 +103,7 @@
 
                     </a>
                     <a class="project project-4">
-                        <img alt="coming soon placeholder" class="project-image"
-                            src="./img/coming-ge25ec7736_1920.jpg">
+                        <img alt="coming soon placeholder" class="project-image" src="./img/coming-ge25ec7736_1920.jpg">
                         <br>
                         <div class="project-button-container">
                             <button class="button button-project">Project 4</button>
@@ -116,8 +111,7 @@
 
                     </a>
                     <a class="project project-5">
-                        <img alt="coming soon placeholder" class="project-image"
-                            src="./img/coming-ge25ec7736_1920.jpg">
+                        <img alt="coming soon placeholder" class="project-image" src="./img/coming-ge25ec7736_1920.jpg">
                         <br>
                         <div class="project-button-container">
                             <button class="button button-project">Project 5</button>
@@ -125,8 +119,7 @@
 
                     </a>
                     <a class="project project-6">
-                        <img alt="coming soon placeholder" class="project-image"
-                            src="./img/coming-ge25ec7736_1920.jpg">
+                        <img alt="coming soon placeholder" class="project-image" src="./img/coming-ge25ec7736_1920.jpg">
                         <br>
                         <div class="project-button-container">
                             <button class="button button-project">Project 6</button>
@@ -158,53 +151,56 @@
                             <a href="https://github.com/simharuk2021" class="icon-social" target="_blank">
                                 <img alt="github icon link" src="./img/8546919_github_square_icon.png">
                             </a>
-                            <a href="https://www.linkedin.com/in/simon-g-hart/" class="icon-social"
-                                target="_blank">
+                            <a href="https://www.linkedin.com/in/simon-g-hart/" class="icon-social" target="_blank">
                                 <img alt="linkedin icon link" src="./img/6929238_linkedin_logo_icon.png">
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="form-wrapper"> -->
 
-                <div class="form">
-                    <!-- <div class="names-section"> -->
-                    <div class="name-first">
+                <form class="whole-form" name="form">
+                    <div class="name-first input-control">
                         <div class="label-wrapper">
-                            <label for="name">First Name: </label>
+                            <label for="first name">First Name: </label>
                         </div>
-                        <input type="text" class="form-control" placeholder="First name*">
+                        <input type="text" id="firstname" class="form-control" placeholder="First name*">
+                        <div class="error"></div>
                     </div>
-                    <div class="name-last">
+                    <div class="name-last input-control">
                         <div class="label-wrapper">
-                            <label for="name">Last Name: </label>
+                            <label for="last name">Last Name: </label>
+
                         </div>
-                        <input type="text" class="form-control" placeholder="Last name*">
+                        <input type="text" id="secondname" class="form-control" placeholder="Last name*">
+                        <div class="error"></div>
                     </div>
-                    <!-- </div> -->
-                    <div class="email">
+
+                    <div class="email input-control">
                         <div class="label-wrapper">
-                            <label for="name">E-Mail: </label>
+                            <label for="email">E-Mail: </label>
                         </div>
-                        <input type="text" class="form-control" placeholder="Email Address">
+                        <input type="text" id="email" class="form-control" placeholder="Email Address">
+                        <div class="error"></div>
                     </div>
-                    <div class="subject">
+                    <div class="subject input-control">
                         <div class="label-wrapper">
-                            <label for="name">Subject: </label>
+                            <label for="subject">Subject: </label>
                         </div>
-                        <input type="text" class="form-control" placeholder="Subject">
+                        <input type="text" id="subject" class="form-control" placeholder="Subject">
+                        <div class="error"></div>
                     </div>
-                    <div class="message">
+                    <div class="message input-control">
                         <div class="label-wrapper">
-                            <label for="name">Message: </label>
+                            <label for="message">Message: </label>
                         </div>
-                        <textarea type="text" class="form-control" id="message"
-                            placeholder="Message"></textarea>
+                        <textarea id="message" type="text" class="form-control" placeholder="Message"></textarea>
+                        <div class="error"></div>
                     </div>
                     <div class="submit-wrapper">
-                        <button class="button button-submit none">Submit</button>
+                        <button type="submit" class="button button-submit none">Submit</button>
                     </div>
-                </div> <!-- </div> -->
+                </form>
+
             </section>
         </div>
         </div>
