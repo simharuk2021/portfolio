@@ -1,36 +1,30 @@
-// @include media-query(medium) {
+@include media-query(medium) {
+  .hero-section{
+    margin-left: 133px;
+  }
+  .projects-wrapper{
+    margin-left:133px;
+  }
+.contact{
+  margin-left: 133px;
+}
 
-// .banner-image{
-//     background-image: url('/img/pexels-mikhail-nilov-7676849.jpg');
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width:100vw;
-//     height:1500px;
-//     z-index: 1;
+}
 
-// }
-// }
 
-// .banner-image{
-//     background-image: url('/img/pexels-mikhail-nilov-7676849.jpg');
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width:100vw;
-//     height:500px;
-//     z-index: 1;
-
-// }
-
-// $hero-height: 60vh;
+.banner-paragraph {
+  font-weight: 400;
+}
 
 .hero-section {
   background: url('/img/pexels-mikhail-nilov-7676849.jpg') no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+
 
   .hero-section-text {
     color: white;
@@ -39,26 +33,25 @@
 }
 
 
-
 .banner-arrow {
-    text-decoration: none !important;
+  text-decoration: none !important;
+  color: white;
+  margin-top: 2rem;
+  top: 0px;
+  font-size: xx-large;
+
+
+  &:hover {
     color: white;
-    margin-top: 2rem;
-    top: 0px;
-    font-size: xx-large;
-
-
-    &:hover {
-        color: white;
-        position: relative;
-        top: 10px;
-        transition: .5s ease;
-        cursor: pointer;
-    }
-}
-.portrait{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    position: relative;
+    top: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+  }
 }
 
+.portrait {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}

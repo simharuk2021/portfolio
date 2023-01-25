@@ -1,3 +1,9 @@
+@include media-query(medium) {
+    .about-wrapper{
+        margin-left: 133px;
+    }
+}
+
 .about-wrapper{
     display: flex;
     flex-direction: column;
@@ -5,6 +11,8 @@
     background-color: black;
     color:white;
     align-items: center;
+
+    
 }
 
 .about-wrapper p {
@@ -21,7 +29,7 @@ hr{
     color:$grey}
 
 .portrait-wrapper{
-    margin-top: 40px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
 }
@@ -33,4 +41,8 @@ hr{
         text-decoration: none;
         color:lighten($grey, 10%);
     }
+}
+
+.about{
+    padding:10px;
 }
