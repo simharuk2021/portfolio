@@ -1,0 +1,21 @@
+.banner {
+
+    background: url('/img/huma-kabakci-oRk4Ep65tRc-unsplash.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@include media-query(medium) {
+    .banner {
+        margin-left: 133px;
+    }
+}
