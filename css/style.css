@@ -7,7 +7,40 @@
   max-width: 1200px;
 }
 
-/* line 21, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+@media (min-width: 767px) {
+  /* line 34, ../PROJECTS/SCION/portfolio/scss/utilities/_media-query.scss */
+  .banner-image {
+    width: 100%;
+    height: 100vh;
+  }
+  /* line 38, ../PROJECTS/SCION/portfolio/scss/utilities/_media-query.scss */
+  .banner-text {
+    font-weight: 800;
+    font-size: 400%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* line 4, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+body {
+  letter-spacing: .4px;
+  font-family: Poppins, sans-serif;
+}
+
+@media (min-width: 767px) {
+  /* line 12, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+  .body-style {
+    margin-top: 0 !important;
+  }
+}
+
+/* line 17, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
+.body-style {
+  margin-top: -50px;
+}
+
+/* line 34, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
 .content-wrapper {
   display: flex;
   flex-direction: row;
@@ -494,13 +527,13 @@
   justify-content: center;
 }
 
-/* line 29, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 31, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .hero-section .hero-section-text {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
 
-/* line 36, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 38, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow {
   text-decoration: none !important;
   color: white;
@@ -509,7 +542,7 @@
   font-size: xx-large;
 }
 
-/* line 44, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 46, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow:hover {
   color: white;
   position: relative;
@@ -518,7 +551,7 @@
   cursor: pointer;
 }
 
-/* line 53, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 55, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .portrait {
   border-radius: 50%;
   width: 200px;
@@ -533,7 +566,7 @@
 /* line 1, ../PROJECTS/SCION/portfolio/scss/components/_hamburger.scss */
 .hamburger {
   display: block;
-  position: absolute;
+  position: sticky;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -633,18 +666,18 @@ hr {
   }
 }
 
-/* line 12, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 14, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .scheme-center {
   margin-left: 133px;
 }
 
-/* line 16, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 18, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .link {
   display: flex;
   justify-content: center;
 }
 
-/* line 21, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 23, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .scheme-wrapper {
   display: flex;
   flex-direction: column;
@@ -655,12 +688,12 @@ hr {
   padding-top: 10rem;
 }
 
-/* line 31, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 33, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .scheme-wrapper p {
   text-align: center;
 }
 
-/* line 36, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 38, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 ul {
   list-style-type: none;
   display: flex;
@@ -670,7 +703,7 @@ ul {
   justify-content: center;
 }
 
-/* line 45, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 47, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .scheme-logo-wrapper {
   display: flex;
   justify-content: center;
@@ -681,18 +714,18 @@ ul {
   margin-bottom: 1rem;
 }
 
-/* line 55, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 57, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .nm-logo {
   padding: 1rem;
   width: 100%;
 }
 
-/* line 60, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 62, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .headline {
   text-align: center;
 }
 
-/* line 64, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 66, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .hl-grey {
   color: #6F75A7;
 }
