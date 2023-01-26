@@ -31,16 +31,11 @@ body {
 @media (min-width: 767px) {
   /* line 12, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
   .body-style {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
 }
 
 /* line 17, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
-.body-style {
-  margin-top: -50px;
-}
-
-/* line 34, ../PROJECTS/SCION/portfolio/scss/layout/_base.scss */
 .content-wrapper {
   display: flex;
   flex-direction: row;
@@ -682,12 +677,17 @@ hr {
 }
 
 /* line 18, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+.scheme {
+  top: 15%;
+}
+
+/* line 22, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .link {
   display: flex;
   justify-content: center;
 }
 
-/* line 23, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 27, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .scheme-wrapper {
   display: flex;
   flex-direction: column;
@@ -698,12 +698,12 @@ hr {
   padding-top: 10rem;
 }
 
-/* line 33, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 37, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .scheme-wrapper p {
   text-align: center;
 }
 
-/* line 38, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 42, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 ul {
   list-style-type: none;
   display: flex;
@@ -713,7 +713,7 @@ ul {
   justify-content: center;
 }
 
-/* line 47, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 51, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .scheme-logo-wrapper {
   display: flex;
   justify-content: center;
@@ -724,44 +724,65 @@ ul {
   margin-bottom: 1rem;
 }
 
-/* line 57, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 61, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .nm-logo {
   padding: 1rem;
   width: 100%;
 }
 
-/* line 62, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 66, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .headline {
   text-align: center;
 }
 
-/* line 66, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
+/* line 70, ../PROJECTS/SCION/portfolio/scss/pages/_scheme.scss */
 .hl-grey {
   color: #6F75A7;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
 .banner {
-  background: url("/img/huma-kabakci-oRk4Ep65tRc-unsplash.jpg") no-repeat;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 12, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
+/* line 7, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
 
 @media (min-width: 767px) {
-  /* line 18, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
+  /* line 13, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
   .banner {
     margin-left: 133px;
   }
+}
+
+/* line 18, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
+.git {
+  background-color: #6F75A7;
+}
+
+/* line 24, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+/* line 31, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
+.tech h4 {
+  margin: unset !important;
+  color: #0A535A;
+  font-weight: 600;
+}
+
+/* line 37, ../PROJECTS/SCION/portfolio/scss/pages/_examples.scss */
+h1 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

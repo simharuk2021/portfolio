@@ -1,9 +1,4 @@
 .banner {
-
-    background: url('/img/huma-kabakci-oRk4Ep65tRc-unsplash.jpg') no-repeat;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,4 +13,27 @@
     .banner {
         margin-left: 133px;
     }
+}
+
+.git {
+    background-color:
+        #6F75A7;
+
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.tech h4 {
+    margin: unset !important;
+    color: #0A535A;
+    font-weight: 600;
+}
+
+h1{
+    color:white;
 }

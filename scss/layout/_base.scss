@@ -10,26 +10,9 @@ body {
 @include media-query(medium) {
 
 .body-style{
-    margin-top: 0 !important;
+    margin-top: 0;
 }
 }
-
-.body-style{
-    margin-top: -50px;
-}
-
-// .main-content {
-//     z-index: 2
-// }
-
-// .container-fluid{
-//     padding:0;
-// }
-
-// .column-wrapper{
-//     display: flex;
-//     flex-direction: row;
-// }
 
 .content-wrapper{
     display: flex;
