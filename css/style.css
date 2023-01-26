@@ -164,10 +164,11 @@ body {
 /* line 23, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .whole-form {
   display: grid;
+  margin-left: 1rem;
   grid-template-areas: "first" "last" "email" "subject" "message";
 }
 
-/* line 33, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 34, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .whole-form-control {
   background-color: #BBDADD;
   padding: 0;
@@ -176,14 +177,14 @@ body {
   border: none;
 }
 
-/* line 40, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 41, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .whole-form-control:hover,
 .whole-form-control :focus {
   box-shadow: 0 0 3px 3px white;
   cursor: pointer;
 }
 
-/* line 48, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 49, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 ::placeholder {
   font-style: italic;
   font-weight: 400;
@@ -191,64 +192,71 @@ body {
   padding: 1rem;
 }
 
-/* line 55, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 56, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 #message {
   height: 200px;
 }
 
+/* line 59, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+label {
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+
 @media (min-width: 767px) {
-  /* line 60, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 64, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .whole-form {
+    width: 600px;
     grid-template-areas: "first last" "email email" "subject subject" "message message";
     grid-column-gap: 2rem;
   }
-  /* line 69, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 74, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .label-wrapper {
     justify-content: flex-start !important;
     margin-bottom: 5px;
     margin-left: 2px;
   }
-  /* line 75, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 80, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .submit-wrapper {
     display: flex;
     justify-content: flex-start !important;
   }
-  /* line 80, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 85, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .banner-image {
     height: 100vh;
   }
-  /* line 84, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 89, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .banner-text {
     font-size: 24px;
     font-weight: 600;
   }
-  /* line 88, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+  /* line 93, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .banner-paragraph {
     margin-bottom: 2rem;
     font-size: 32px !important;
   }
 }
 
-/* line 94, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 99, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .label-wrapper {
   display: flex;
   justify-content: center;
   color: white;
 }
 
-/* line 100, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 105, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .submit-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
-/* line 106, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 111, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .input-control.success input {
   border-color: #09c372;
 }
 
-/* line 110, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
+/* line 115, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
 .input-control.error input {
   border-color: #ff3860;
 }
@@ -500,23 +508,24 @@ body {
   /* line 2, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
   .hero-section {
     margin-left: 133px;
+    margin-top: unset !important;
   }
-  /* line 5, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+  /* line 6, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
   .projects-wrapper {
     margin-left: 133px;
   }
-  /* line 8, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+  /* line 9, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
   .contact {
     margin-left: 133px;
   }
 }
 
-/* line 15, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 16, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-paragraph {
   font-weight: 400;
 }
 
-/* line 19, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 20, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .hero-section {
   background: url("/img/pexels-mikhail-nilov-7676849.jpg") no-repeat;
   background-size: cover;
@@ -525,15 +534,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -61px;
 }
 
-/* line 31, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 32, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .hero-section .hero-section-text {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
 
-/* line 38, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 39, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow {
   text-decoration: none !important;
   color: white;
@@ -542,7 +552,7 @@ body {
   font-size: xx-large;
 }
 
-/* line 46, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 47, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .banner-arrow:hover {
   color: white;
   position: relative;
@@ -551,7 +561,7 @@ body {
   cursor: pointer;
 }
 
-/* line 55, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
+/* line 56, ../PROJECTS/SCION/portfolio/scss/components/_banner.scss */
 .portrait {
   border-radius: 50%;
   width: 200px;

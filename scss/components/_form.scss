@@ -22,6 +22,7 @@
 
 .whole-form {
     display: grid;
+    margin-left:1rem;
 
     grid-template-areas:
         "first"
@@ -55,9 +56,13 @@
 #message {
     height: 200px;
 }
-
+label{
+margin-top: .5rem !important;
+margin-bottom: .5rem !important;
+}
 @include media-query(medium) {
     .whole-form {
+        width:600px;
         grid-template-areas:
             "first last"
             "email email"
