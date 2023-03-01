@@ -1,4 +1,4 @@
-#cookie-modal-run {
+#cookie-modal {
     display: none;
     position: fixed;
     top: 0;
@@ -21,6 +21,7 @@
 
 .modal-dialog {
     margin: auto;
+    // max-width: fit-content;
 
 }
 
