@@ -115,3 +115,16 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+
+function openModal() {
+  let modal = document.getElementById('cookie-modal')
+  modal.style.display = "block"
+  modal.open()
+}
+
+function closeModal() {
+  let modal = document.getElementById('cookie-modal')
+  modal.style.display = "none"
+  modal.close()
+}

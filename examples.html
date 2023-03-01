@@ -45,9 +45,6 @@
                     <a href="./scheme.html"><button class="button button-nav">SCS Scheme</button></a>
                 </div>
             </div>
-
-
-
             <div class="main-content container-fluid">
                 <button class="hamburger hamburger--collapse slide-toggle" type="button">
                     <span class="hamburger-box">
@@ -63,31 +60,53 @@
                             <div class="project-icons">
                                 <img class="p-icon"
                                     src="./img/652581_code_command_develop_javascript_language_icon.png">
-                                <div class="tech">
-                                    <h4>JAVASCRIPT</h4>
-                                </div>
                             </div>
-                            <img alt="coming soon placeholder" class="project-image" src="./img/example_js_hamb.PNG">
+                            <img alt="coming soon placeholder" class="project-image-code" src="./img/example_js_hamb.PNG">
                             <br>
-
                             <p class="project-text">This code is a JavaScript function which toggles the slide out
                                 sidebar menu and hamburger animation, when the user clicks.
                             </p>
-
                             <div class="project-button-container">
                                 <button class="button button-project git">Github</button>
                             </div>
                         </a>
                         <a class="project">
-                            <img alt="coming soon placeholder" class="project-image"
-                                src="./img/coming-ge25ec7736_1920.jpg">
-                            <br>
-
-                            <div class="project-button-container">
-                                <button class="button button-project git">Github</button>
+                            <div class="project-icons">
+                                <img class="p-icon"
+                                    src="./img/logo-mysql-170x115.png">
                             </div>
-
+                            <img alt="coming soon placeholder" class="project-image-code"
+                                src="./img/movies_db.png">
+                            <br>
+                            <p class="project-text">The above diagram represents the relationships between tables which combine to make a database containing details about movies
+                            </p>
+                            <div class="project-button-container">
+                                <button class="button button-project git"  onclick="openModal()">Query</button>
+                                
+                            </div>
                         </a>
+                    </div>
+                    <div id="cookie-modal">
+                        <div class="modal-fade">
+                            <div class="modal-dialog">
+            
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>SQL Query</h2>
+            
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            This is a SQL query which will return 3 records which include the name of the director and title of the movie with the best  ratings.
+                                        </p>
+                                        <img alt="coming soon placeholder" class="project-image-code-small" src="./img/sql_query.PNG">
+                                    </div>
+                                    <div class="modal-buttons">
+                                        <button class="button modal-button git" onclick="closeModal()">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
