@@ -103,11 +103,18 @@
                                         <img alt="coming soon placeholder" class="project-image-code-small" src="./img/sql_query.PNG">
                                         <p>
                                             The query begins by selecting the movie title from the movie table and then concatenating the first and last names of the director
-                                            as these are in separate columns in the directors table.
+                                            as these are in separate columns in the directors table.  The names of the columns are also set using the AS keyword.
                                         </p>
                                         <p>
-                                            The query then uses the movie_direction table, which links the director and movies tables using their respective id's.
+                                            The query then joins the movie_direction table, which links the director and movies tables using their respective id's.
                                         </p>
+                                        <p>
+                                            The rating table is then joined to the to add the movie reviews by movie id using a subquery which filters out any reviews which have no rating.
+                                        </p>
+                                        <p>
+                                            Finally the three movies with the best ratings are returned.
+                                        </p>
+                                        <img alt="coming soon placeholder" class="project-image-code-small" src="./img/db_2.PNG">
                                     </div>
                                     <div class="modal-buttons">
                                         <button class="button modal-button git" onclick="closeModal()">Close</button>

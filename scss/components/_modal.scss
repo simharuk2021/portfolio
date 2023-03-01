@@ -6,12 +6,12 @@
     left: 0;
     right: 0;
     z-index: 100;
-    // background-color: rgba(0, 0, 0, .7);
-    // display: flex;
-    // -webkit-overflow-scrolling: touch;
-    // outline: 0;
-    // overflow-x: hidden;
-    // overflow-y: auto;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -22,6 +22,14 @@
 .modal-dialog {
     margin: auto;
     // max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 40rem;
 
 }
 
