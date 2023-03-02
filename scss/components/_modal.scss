@@ -21,7 +21,7 @@
 
 .modal-dialog {
     margin: auto;
-    // max-width: fit-content;
+    max-width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -35,6 +35,11 @@
 
 .modal-fade {
     opacity: 1;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: center;
 }
 
 .modal-content {
@@ -69,6 +74,11 @@
     line-height: 35px;
     padding:5px 15px;
     font-size: 1.1rem;
+}
+
+.image-wrapper{
+    display: flex;
+    justify-content: center;
 }
 
 // .change {

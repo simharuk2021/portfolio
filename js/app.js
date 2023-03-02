@@ -116,10 +116,11 @@ function typeWriter() {
 }
 typeWriter();
 
+// $("document").on("pagecontainerload",function(){closeModal()}) ;
 
 function openModal() {
   let modal = document.getElementById('cookie-modal')
-  modal.style.display = "block"
+  modal.style.display = "block";
   modal.open()
 }
 
