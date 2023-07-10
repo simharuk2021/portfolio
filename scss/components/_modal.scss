@@ -29,7 +29,7 @@
     justify-content: center;
     padding: 1rem;
     border-radius: 10px;
-    max-width: 40rem;
+    max-width: 90%;
 
 }
 
@@ -77,6 +77,7 @@
 }
 
 .image-wrapper{
+    width:100%;
     display: flex;
     justify-content: center;
 }
@@ -94,6 +95,21 @@
 //     }
 // }
 
+.blue {
+    color:#358CD6;
+}
+
+.orange{
+    color:#b6572a;
+}
+
+.sql-text{
+    color:white;
+}
+.sql-text-wrapper{
+    background-color:#1E1E1E;
+}
+
 @include media-query(medium)  {
     .modal-buttons { 
         flex-direction:row;
@@ -102,3 +118,23 @@
 
     
 }
+
+.movie-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .movie-table th,
+  .movie-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .movie-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .movie-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }

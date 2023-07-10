@@ -118,14 +118,15 @@ typeWriter();
 
 // $("document").on("pagecontainerload",function(){closeModal()}) ;
 
+function closeModal() {
+  let modal = document.getElementById('cookie-modal')
+  modal.style.display = "none";
+  modal.close()
+}
 function openModal() {
+
   let modal = document.getElementById('cookie-modal')
   modal.style.display = "block";
   modal.open()
 }
 
-function closeModal() {
-  let modal = document.getElementById('cookie-modal')
-  modal.style.display = "none"
-  modal.close()
-}

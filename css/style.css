@@ -323,7 +323,7 @@ label {
   top: 0px;
 }
 
-/* line 16, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+/* line 14, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
 .project:hover {
   position: relative;
   top: -10px;
@@ -332,8 +332,8 @@ label {
   text-decoration: none;
 }
 
-/* line 24, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.project-headline {
+/* line 22, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+.project .project-headline {
   text-align: center;
   padding: 1rem;
   color: #0A535A;
@@ -342,34 +342,34 @@ label {
   letter-spacing: 1px;
 }
 
-/* line 32, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.project-icons {
+/* line 31, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+.project .project-icons {
   display: flex;
   justify-content: center;
 }
 
-/* line 38, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.p-icon {
+/* line 36, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+.project .p-icon {
   height: 60px;
   width: 60px;
   margin: 1rem;
 }
 
-/* line 44, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.project-text {
+/* line 42, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+.project .project-text {
   padding: 1rem;
   color: #0A535A;
   font-weight: 600;
 }
 
-/* line 49, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.container {
+/* line 48, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+.project .container {
   margin: none;
   padding: none;
 }
 
 /* line 53, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.project-button-container {
+.project .project-button-container {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -378,15 +378,15 @@ label {
 }
 
 /* line 61, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.project-image {
+.project .project-image {
   max-width: 100%;
-  height: 200px;
+  height: 100%;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* line 68, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.project-image-code {
+.project .project-image-code {
   max-width: 100%;
   height: 400px;
   border-radius: 5px;
@@ -394,31 +394,30 @@ label {
 }
 
 /* line 75, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.project-image-code-small {
-  max-width: 100%;
+.project .project-image-code-small {
   height: 180px;
   margin-bottom: 1rem;
 }
 
-/* line 81, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-.projects-wrapper {
+/* line 80, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+.project .projects-wrapper {
   padding: 50px 0px 25px 0px;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 767px) {
-  /* line 81, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-  .projects-wrapper {
-    flex-direction: row !important;
+@media (min-width: 768px) {
+  /* line 88, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
+  .project .projects-wrapper {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   /* line 94, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
-  .projects-wrapper .project {
-    flex: 1 1 333px;
-    margin: 2rem;
+  .project .project {
+    flex: 0 0 calc(50% - 2rem);
+    margin: 1rem;
   }
 }
 
@@ -426,17 +425,16 @@ label {
 .contact {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: black;
-  padding: 50px;
+  background-color: #3e415a;
 }
 
-/* line 8, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+/* line 7, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
 .fix-wrap {
   display: flex;
   justify-content: center;
 }
 
-/* line 14, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+/* line 13, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
 .social-wrapper {
   height: auto;
   width: auto;
@@ -448,7 +446,7 @@ label {
   margin-bottom: 1rem;
 }
 
-/* line 26, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
+/* line 25, ../PROJECTS/SCION/portfolio/scss/components/_contact.scss */
 .icon-social {
   display: flex;
   justify-content: center;
@@ -591,6 +589,7 @@ label {
   left: 80%;
   transform: translate(-50%, -50%);
   color: black;
+  z-index: 100;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -629,7 +628,7 @@ label {
   justify-content: center;
   padding: 1rem;
   border-radius: 10px;
-  max-width: 40rem;
+  max-width: 90%;
 }
 
 /* line 36, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
@@ -682,15 +681,60 @@ label {
 
 /* line 79, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
 .image-wrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
+/* line 98, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.blue {
+  color: #358CD6;
+}
+
+/* line 102, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.orange {
+  color: #b6572a;
+}
+
+/* line 106, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.sql-text {
+  color: white;
+}
+
+/* line 109, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.sql-text-wrapper {
+  background-color: #1E1E1E;
+}
+
 @media (min-width: 767px) {
-  /* line 98, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+  /* line 114, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
   .modal-buttons {
     flex-direction: row;
   }
+}
+
+/* line 122, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.movie-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 127, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.movie-table th,
+.movie-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* line 134, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.movie-table th {
+  background-color: #f2f2f2;
+}
+
+/* line 138, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
+.movie-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
 /* line 1, ../PROJECTS/SCION/portfolio/scss/layout/_background.scss */
