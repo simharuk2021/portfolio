@@ -66,13 +66,28 @@
                             <br>
                             <p class="project-text">This code is a JavaScript function which toggles the slide out
                                 sidebar menu and hamburger animation, when the user clicks.
-                            </p>
 
-                            <div class="project-button-container">
-                                <button class="button button-project git">Github</button>
-                            </div>
+                                This function selects the element with the class hamburger and assigns it to the
+                                variable $hamburger.
+                                It then attaches a click event handler to the $hamburger element. When the element is
+                                clicked, the function is triggered.
+                                Inside the function, the toggleClass() method is used to toggle the class "is-active" on
+                                the $hamburger element.
+                                This class is typically used to apply styling to the hamburger icon,
+                                such as animating it to transform into a close icon or indicating an active state. </p>
+                            <hr>
+                            <p class="project-text">In summary, the first function toggles the width of the sidebar element when the
+                                slide-toggle element is clicked,
+                                while the second function toggles the is-active class on the hamburger element when it
+                                is clicked.
+                                These functions enable interactivity and animation in the user interface.
+                            </p>
+                            </p>
+                            <br>
+                            <p class ="project-text">Click anywhere on this tile for more information</p>
+                            
                         </a>
-                        <a class="project">
+                        <a class="project" onclick="openModal()">
                             <div class="project-icons">
                                 <img class="p-icon" src="./img/logo-mysql-170x115.png">
                             </div>
@@ -81,10 +96,8 @@
                             <p class="project-text">The above diagram represents the relationships between tables which
                                 combine to make a database containing details about movies
                             </p>
-                            <div class="project-button-container">
-                                <button class="button button-project git" onclick="openModal()">Query</button>
-
-                            </div>
+                            <br>
+                            <p class ="project-text">Click anywhere on this tile for more information</p>
                         </a>
                     </div>
                     <div id="cookie-modal" style="display:none">
@@ -101,14 +114,23 @@
                                             This is a SQL query which will return 3 records which include the name of
                                             the director and title of the movie with the best ratings.
                                         </p>
-                                        <div class = "sql-text-wrapper">
-                                    <p class="sql-text"><span class = "blue">SELECT</span> movie.mov_title <span class = "blue">AS</span> <span class = "orange">"Title"</span>, director.dir_fname || ' ' || director.dir_lname  
-                                        <span class = "blue">AS</span> <span class = "orange">"Director's  Name"</span>, rating.rev_stars <span class = "blue">AS</span> <span class = "orange">"rating"</span> <span class="blue">FROM</span> movie
-                                        <span class = "blue">INNER JOIN</span> movie_direction <span class = "blue">ON</span> movie.mov_id = movie_direction.mov_id
-                                        <span class = "blue">INNER JOIN</span> director <span class = "blue">ON</span> movie_direction.dir_id = director.dir_id
-                                        <span class = "blue">INNER JOIN</span> (select * FROM rating WHERE rating <span class = "blue">IS NOT NULL</span>) rating <span class = "blue">ON</span> movie.mov_id = rating.mov_id
-                                        <span class = "blue">ORDER BY</span> rating <span class = "blue">DESC LIMIT</span> 3;
-                                    </p>
+                                        <div class="sql-text-wrapper">
+                                            <p class="sql-text"><span class="blue">SELECT</span> movie.mov_title <span
+                                                    class="blue">AS</span> <span class="orange">"Title"</span>,
+                                                director.dir_fname || ' ' || director.dir_lname
+                                                <span class="blue">AS</span> <span class="orange">"Director's
+                                                    Name"</span>, rating.rev_stars <span class="blue">AS</span> <span
+                                                    class="orange">"rating"</span> <span class="blue">FROM</span> movie
+                                                <span class="blue">INNER JOIN</span> movie_direction <span
+                                                    class="blue">ON</span> movie.mov_id = movie_direction.mov_id
+                                                <span class="blue">INNER JOIN</span> director <span
+                                                    class="blue">ON</span> movie_direction.dir_id = director.dir_id
+                                                <span class="blue">INNER JOIN</span> (select * FROM rating WHERE rating
+                                                <span class="blue">IS NOT NULL</span>) rating <span
+                                                    class="blue">ON</span> movie.mov_id = rating.mov_id
+                                                <span class="blue">ORDER BY</span> rating <span class="blue">DESC
+                                                    LIMIT</span> 3;
+                                            </p>
                                         </div>
                                         <p>
                                             The query begins by selecting the movie title from the movie table and then
@@ -128,35 +150,35 @@
                                             Finally the three movies with the best ratings are returned, in descending
                                             order (i.e. highest first).
                                         </p>
-                                        <div class = "image-wrapper">
-                                            <table class ="movie-table">
+                                        <div class="image-wrapper">
+                                            <table class="movie-table">
                                                 <thead>
-                                                  <tr>
-                                                    <th>Title</th>
-                                                    <th>Director's Name</th>
-                                                    <th>Rating</th>
-                                                  </tr>
+                                                    <tr>
+                                                        <th>Title</th>
+                                                        <th>Director's Name</th>
+                                                        <th>Rating</th>
+                                                    </tr>
                                                 </thead>
                                                 <tbody>
-                                                  <tr>
-                                                    <td>The Usual Suspects</td>
-                                                    <td>Brian Singer</td>
-                                                    <td>8.6</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>Vertigo</td>
-                                                    <td>Alfred Hitchcock</td>
-                                                    <td>8.4</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>Aliens</td>
-                                                    <td>James Cameron</td>
-                                                    <td>8.4</td>
-                                                  </tr>
-                                                  <!-- Add more rows as needed -->
+                                                    <tr>
+                                                        <td>The Usual Suspects</td>
+                                                        <td>Brian Singer</td>
+                                                        <td>8.6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vertigo</td>
+                                                        <td>Alfred Hitchcock</td>
+                                                        <td>8.4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aliens</td>
+                                                        <td>James Cameron</td>
+                                                        <td>8.4</td>
+                                                    </tr>
+                                                    <!-- Add more rows as needed -->
                                                 </tbody>
-                                              </table>
-                                              
+                                            </table>
+
                                         </div>
                                     </div>
                                     <div class="modal-buttons">
