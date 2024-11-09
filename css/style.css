@@ -160,7 +160,12 @@ body {
 .whole-form {
   display: grid;
   margin-left: 1rem;
-  grid-template-areas: "first" "last" "email" "subject" "message";
+  margin-right: 1rem;
+  grid-template-areas: "first"
+ "last"
+ "email"
+ "subject"
+ "message";
 }
 
 /* line 34, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
@@ -198,12 +203,16 @@ label {
   margin-bottom: .5rem !important;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 795px) {
   /* line 64, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .whole-form {
-    width: 600px;
-    grid-template-areas: "first last" "email email" "subject subject" "message message";
+    width: 95%;
+    grid-template-areas: "first last"
+ "email email"
+ "subject subject"
+ "message message";
     grid-column-gap: 2rem;
+    margin-right: 2rem;
   }
   /* line 74, ../PROJECTS/SCION/portfolio/scss/components/_form.scss */
   .label-wrapper {
