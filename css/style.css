@@ -649,6 +649,7 @@ label {
   padding: 1rem;
   border-radius: 10px;
   max-width: 90%;
+  box-sizing: content-box;
 }
 
 /* line 36, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
@@ -697,6 +698,10 @@ label {
   line-height: 35px;
   padding: 5px 15px;
   font-size: 1.1rem;
+}
+
+.modal-body{
+
 }
 
 /* line 79, ../PROJECTS/SCION/portfolio/scss/components/_modal.scss */
