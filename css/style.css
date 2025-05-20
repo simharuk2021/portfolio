@@ -357,6 +357,7 @@ label {
 .project .project-icons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* line 38, ../PROJECTS/SCION/portfolio/scss/components/_projects.scss */
